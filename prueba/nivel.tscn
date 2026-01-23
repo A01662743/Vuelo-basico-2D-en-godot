@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://c1b2jgi7b75jj"]
+
+[ext_resource type="Script" uid="uid://bfvxrj5h1nh4b" path="res://nivel.gd" id="1_d04yg"]
+[ext_resource type="Texture2D" uid="uid://djgryc1b3pw62" path="res://sky_backgrnd.jpg" id="2_u1w1e"]
+[ext_resource type="PackedScene" uid="uid://fbi75vc6kjnn" path="res://pajaro.tscn" id="3_7gdj4"]
+
+[node name="nivel" type="Node2D"]
+script = ExtResource("1_d04yg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 320.5)
+scale = Vector2(1.49479, 1.78611)
+texture = ExtResource("2_u1w1e")
+
+[node name="pajaro" parent="." instance=ExtResource("3_7gdj4")]
